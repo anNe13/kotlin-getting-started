@@ -1,13 +1,10 @@
 package com.example
 
 import com.example.ws.EventWs
-import org.springframework.boot.SpringApplication
-import org.springframework.boot.autoconfigure.SpringBootApplication
 import spark.Spark
 
 
-open class Application {
-    companion object {
+
         fun main(args: Array<String>) {
             val process = ProcessBuilder()
             val port: Int?
@@ -26,5 +23,3 @@ open class Application {
             Spark.webSocket("/event", EventWs::class.java)
             Spark.init()
         }
-    }
-}
