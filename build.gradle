@@ -8,7 +8,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
-applicationName = "kotlin-getting-started"
+applicationName = "anNe13-kotlin-getting-started-2db8a21"
 
 apply plugin: 'eclipse'
 apply plugin: 'idea'
