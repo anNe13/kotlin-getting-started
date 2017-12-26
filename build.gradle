@@ -8,6 +8,7 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
     }
 }
+applicationName = "kotlin-getting-started"
 
 apply plugin: 'eclipse'
 apply plugin: 'idea'
@@ -45,3 +46,6 @@ dependencies {
     compile 'com.google.code.gson:gson:2.8.2'
 
 }
+
+defaultTasks = ['clean']
+task stage(dependsOn: ['clean', 'installApp'])
